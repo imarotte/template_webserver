@@ -1,0 +1,37 @@
+/*!
+ * @Copyright © 2019-2020 Isaac Marotte - All Rights Reserved
+ *
+ * This file is the sole property of its owner.
+ * Unauthorized use of this file, via any medium or form, whole or in part,
+ * is strictly prohibited without the expressed written permission of Isaac Marotte
+ *
+ * This file is proprietary and confidential
+ *
+ * Last Modified: 2020.7.10
+ */
+
+@import "../scss/colors";
+@import "../scss/constants";
+
+.headerBar{
+  border-bottom: 1px solid $color-border;
+}
+
+.header{
+  max-width: $maxScreenWidth;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  h1{
+    margin: 0;
+  }
+}
+
+.headerIcon {
+  font-size: 40px;
+  margin: 5px;
+}

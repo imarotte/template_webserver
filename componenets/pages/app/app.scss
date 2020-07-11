@@ -1,0 +1,63 @@
+/*!
+ * @Copyright © 2019-2020 Isaac Marotte - All Rights Reserved
+ *
+ * This file is the sole property of its owner.
+ * Unauthorized use of this file, via any medium or form, whole or in part,
+ * is strictly prohibited without the expressed written permission of Isaac Marotte
+ *
+ * This file is proprietary and confidential
+ *
+ * Last Modified: 2020.7.10
+ */
+
+@import "../../scss/colors";
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: inherit;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+
+html{
+  background-color: $color-background-global;
+  color: $color-text;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+  word-spacing: 1.2px;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    {
+      margin-bottom: 0;
+    }
+
+    a{
+      color: $color-primary;
+
+      &:hover,
+      &:focus {
+        color: $color-primary-hover;
+      }
+    }
+  }
+}

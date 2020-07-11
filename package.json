@@ -1,0 +1,58 @@
+{
+  "name": "template_webserver",
+  "version": "0.0.1",
+  "description": "Template Express server for anything I might need",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/lib/server.bundle.js",
+    "prestart": "webpack --progress --colors --display-error-details",
+    "start_dev": "nodemon --watch ./dist ./dist/lib/server.bundle.js",
+    "build_dev": "webpack --progress --colors --display-error-details --watch &",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .js --ext .jsx --format ./node_modules/eslint-config-onny/eslintFormat",
+    "lint_fix": "eslint . --ext .js --ext .jsx --format ./node_modules/eslint-config-onny/eslintFormat --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imarotte/template_webserver.git"
+  },
+  "author": "Isaac Marotte (imarotte@gmail.com)",
+  "license": "GNU AGPLv3",
+  "bugs": {
+    "url": "https://github.com/imarotte/template_webserver/issues"
+  },
+  "homepage": "https://github.com/imarotte/template_webserver#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.10.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-brands-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "autoprefixer": "^9.8.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.4.0",
+    "eslint-config-onny": "0.0.1-5",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^9.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^2.3.0"
+  }
+}
